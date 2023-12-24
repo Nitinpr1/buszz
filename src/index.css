@@ -6,6 +6,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background: #fff;
   padding: 0 20px;
@@ -14,6 +15,7 @@ header {
   color: black;
   z-index: 2;
   border-bottom: 1px solid #eb950c;
+  font-size: 16px;
 }
 
 .logo_section {
@@ -27,6 +29,7 @@ header {
 header nav {
   text-decoration: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -37,17 +40,21 @@ header nav a {
   color: black;
 }
 
-header nav a:nth-child(3) {
-  border: 1px solid #fff;
+header nav button {
+  border: 1px solid #cb5302;
   padding: 10px;
   border-radius: 10px;
   background: #eb950c;
+  width: 100px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
 }
 
-header nav a:nth-child(4) {
-  border: 1px solid #fff;
-  padding: 10px;
-  border-radius: 5px;
+header nav button:nth-of-type(2) {
+  background: #fff;
+  border: 1px solid #cb5302;
+  color: #cb5302;
 }
 
 main {
@@ -77,7 +84,7 @@ main {
 }
 
 .select_div h1 {
-  color: #eb950c;
+  color: #ef7707;
   margin-bottom: 50px;
   font-size: 60px;
   line-height: 60px;
@@ -91,6 +98,7 @@ main {
 .dropdown_div {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   width: 100%;
@@ -163,6 +171,8 @@ main {
   background: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  min-width: 300px;
+  text-align: center;
 }
 
 .service_card:nth-child(2) {
@@ -176,7 +186,7 @@ main {
 }
 
 .service_card img {
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .service_card h3 {
@@ -220,6 +230,71 @@ main {
   padding: 3px;
   color: #fff;
   border-radius: 6px;
+}
+
+.contact_section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.form_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_block h1 {
+  color: #eb950c;
+  font-size: 22px;
+}
+
+.forms {
+  border: none;
+}
+.forms label {
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #eb950c;
+}
+
+.forms input {
+  min-width: 300px;
+  outline: none;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #eb950c;
+}
+.forms textarea {
+  min-width: 300px;
+  outline: none;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #eb950c;
+}
+
+.forms button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: #eb950c;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.bus_img img {
+  width: 100%;
 }
 
 footer {

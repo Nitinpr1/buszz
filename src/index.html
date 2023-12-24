@@ -21,9 +21,9 @@
 
       <nav>
         <a href="" target="_blank">Tickets</a>
-        <a href="" target="_blank">Contact Us</a>
-        <a href="">Login</a>
-        <a href="">Register</a>
+        <a href="#contentus" target="_blank">Contact Us</a>
+        <button>Login</button>
+        <button>Register</button>
       </nav>
     </header>
     <main>
@@ -96,6 +96,23 @@
 
             <p>Bus was clean and the journey was smooth. Reached on time.</p>
           </div>
+        </div>
+      </section>
+      <section id="contentus" class="contact_section">
+        <div class="form_block">
+          <h1>Contact Us</h1>
+          <form class="forms">
+            <label for="input_name">Name:</label><br />
+            <input type="text" name="name" id="input_name" /><br /><br />
+            <label for="input_email">Email:</label><br />
+            <input type="email" name="email" id="input_email" /><br /><br />
+            <label for="input_msg">Message:</label><br />
+            <textarea rows="4" name="msg" id="input_msg"></textarea><br />
+            <button>Send</button>
+          </form>
+        </div>
+        <div class="bus_img">
+          <img src="../assets/bus.png" alt="bus" />
         </div>
       </section>
     </main>
