@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bus Booking</title>
+    <title>Buszz</title>
+    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,9 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1000">
       <nav class="nav">
         <a href="/" class="logo"
           ><img src="../assets/logo.png" alt="logo" /> Buszz</a
@@ -36,11 +39,15 @@
     <main>
       <section class="hero_section">
         <div class="select_div">
-          <h1>
+          <h1 data-aos="fade-right" data-aos-duration="1000">
             Travel with world's largest <br />
             <span class="heading_span">Bus Services</span>
           </h1>
-          <div class="dropdown_div">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="dropdown_div"
+          >
             <label>From:</label>
             <select name="Depart" id="depart">
               <option value="Delhi">Delhi</option>
@@ -60,19 +67,33 @@
         </div>
       </section>
       <section>
-        <h1 class="service_h">Services</h1>
+        <h1 data-aos="fade-left" data-aos-duration="1000" class="service_h">
+          Services
+        </h1>
         <div class="services_section">
-          <div class="service_card">
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            class="service_card"
+          >
             <img src="../assets/Sbus.png" alt="Bus" width="256px" />
             <h3>2000+</h3>
             <p>Bus Collection</p>
           </div>
-          <div class="service_card">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            class="service_card"
+          >
             <img src="../assets/family.jpg" alt="Family" width="256px" />
             <h3>2 Million+</h3>
             <p>Happy customers globally</p>
           </div>
-          <div class="service_card">
+          <div
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+            class="service_card"
+          >
             <img src="../assets/tickets.jpg" alt="Ticket" width="256px" />
             <h3>5000+</h3>
             <p>Tickets book everyday</p>
@@ -81,10 +102,10 @@
       </section>
       <section id="table-layout">
         <table id="table-style">
-          <caption>
+          <caption data-aos="fade-right" data-aos-duration="1000">
             Reserve Bus Schedule
           </caption>
-          <thead>
+          <thead data-aos="fade-left" data-aos-duration="1000">
             <tr>
               <th>Bus Details</th>
               <th colspan="4">Trip Information</th>
@@ -97,7 +118,7 @@
               <th scope="col">Duration</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody data-aos="fade-right" data-aos-duration="1000">
             <tr>
               <td>ASC712</td>
               <td>New York City</td>
@@ -158,23 +179,33 @@
         </table>
       </section>
       <section style="background-color: whitesmoke; padding: 10px">
-        <h1 class="service_h">What Our Customers Say</h1>
+        <h1 data-aos="fade-left" data-aos-duration="1000" class="service_h">
+          What Our Customers Say
+        </h1>
         <div class="testimonial_section">
-          <div class="test_card">
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            class="test_card"
+          >
             <p class="rating">4.4 ☆</p>
             <h3>Vastu Agarwal</h3>
             <h4>Customer since 2020</h4>
 
             <p>Amazing travel experience with Buszz. Excellent staff</p>
           </div>
-          <div class="test_card">
+          <div data-aos="zoom-in-up" data-aos-duration="1000" class="test_card">
             <p class="rating">4.3 ☆</p>
             <h3>Rohan Sharma</h3>
             <h4>Customer since 2022</h4>
 
             <p>Amazing service. Always a best time with Buszz.</p>
           </div>
-          <div class="test_card">
+          <div
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+            class="test_card"
+          >
             <p class="rating">4.6 ☆</p>
             <h3>Kiku Singh</h3>
             <h4>Customer since 2019</h4>
@@ -186,8 +217,8 @@
 
       <section id="contentus" class="contact_section">
         <div class="form_block">
-          <h1>Contact Us</h1>
-          <form class="forms">
+          <h1 data-aos="fade-right" data-aos-duration="1000">Contact Us</h1>
+          <form data-aos="fade-up" data-aos-duration="1000" class="forms">
             <label for="input_name">Name:</label><br />
             <input type="text" name="name" id="input_name" /><br /><br />
             <label for="input_email">Email:</label><br />
@@ -197,7 +228,7 @@
             <button>Send</button>
           </form>
         </div>
-        <div class="bus_img">
+        <div data-aos="fade-left" data-aos-duration="1000" class="bus_img">
           <img src="../assets/bus.png" alt="bus" />
         </div>
       </section>
@@ -218,6 +249,7 @@
       hamburger.addEventListener("click", () => {
         navLink.classList.toggle("hide");
       });
+      AOS.init();
     </script>
   </body>
 </html>
